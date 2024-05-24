@@ -1,0 +1,63 @@
+
+.image{
+  content:url(../../Images/profile.jpg);
+  width: 50vh;
+  height: 50vh;
+  border: solid 2px #ffffff;
+  border-radius: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.glow {
+  animation: glow-animation 1s infinite alternate; /* Adjust animation duration as needed */
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 20px #85f5ff7e;
+  }
+  100% {
+    box-shadow: 0 0 30px #00eaff7a; /* Change color here for different glow color */
+  }
+}
+
+.white-button{
+  border: solid 3px rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.white-button:hover{
+  color: #ffffff;
+  background-color: #000000b5;
+}
+
+.black-button{
+  color: #ffffff;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+  border: solid 3px rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.black-button:hover{
+  background-color: #000000b5;
+  border: solid 3px rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.Resume{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bounce{
+  animation: bounce-animation 1s infinite alternate;
+}
+
+.dev{
+  font-size: 50px;
+}
+
+@keyframes bounce-animation{
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
